@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		384AB2FB29C105B3003A9344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384AB2FA29C105B3003A9344 /* AppDelegate.swift */; };
-		384AB2FD29C105B3003A9344 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384AB2FC29C105B3003A9344 /* SceneDelegate.swift */; };
-		384AB2FF29C105B3003A9344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384AB2FE29C105B3003A9344 /* ViewController.swift */; };
-		384AB30229C105B3003A9344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384AB30029C105B3003A9344 /* Main.storyboard */; };
 		384AB30529C105B3003A9344 /* OnlineShopApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 384AB30329C105B3003A9344 /* OnlineShopApp.xcdatamodeld */; };
 		384AB30729C105B4003A9344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384AB30629C105B4003A9344 /* Assets.xcassets */; };
 		384AB30A29C105B4003A9344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384AB30829C105B4003A9344 /* LaunchScreen.storyboard */; };
+		384AB31429C10B02003A9344 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384AB31329C10B02003A9344 /* Coordinator.swift */; };
+		384AB31629C10BA4003A9344 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384AB31529C10BA4003A9344 /* AppCoordinator.swift */; };
+		384AB31C29C10D64003A9344 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384AB31B29C10D64003A9344 /* SignInVC.swift */; };
+		384AB32529C10ED3003A9344 /* SignInVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384AB32429C10ED3003A9344 /* SignInVC.storyboard */; };
+		384AB32729C11CA6003A9344 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384AB32629C11CA6003A9344 /* SignInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		384AB2F729C105B3003A9344 /* OnlineShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		384AB2FA29C105B3003A9344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		384AB2FC29C105B3003A9344 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		384AB2FE29C105B3003A9344 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		384AB30129C105B3003A9344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		384AB30429C105B3003A9344 /* OnlineShopApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnlineShopApp.xcdatamodel; sourceTree = "<group>"; };
 		384AB30629C105B4003A9344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384AB30929C105B4003A9344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		384AB30B29C105B4003A9344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384AB31329C10B02003A9344 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		384AB31529C10BA4003A9344 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		384AB31B29C10D64003A9344 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		384AB32429C10ED3003A9344 /* SignInVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInVC.storyboard; sourceTree = "<group>"; };
+		384AB32629C11CA6003A9344 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,66 @@
 		384AB2F929C105B3003A9344 /* OnlineShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				384AB31129C109D5003A9344 /* Coordinators */,
+				384AB31829C10CE9003A9344 /* SignInVC */,
 				384AB2FA29C105B3003A9344 /* AppDelegate.swift */,
-				384AB2FC29C105B3003A9344 /* SceneDelegate.swift */,
-				384AB2FE29C105B3003A9344 /* ViewController.swift */,
-				384AB30029C105B3003A9344 /* Main.storyboard */,
 				384AB30629C105B4003A9344 /* Assets.xcassets */,
 				384AB30829C105B4003A9344 /* LaunchScreen.storyboard */,
 				384AB30B29C105B4003A9344 /* Info.plist */,
 				384AB30329C105B3003A9344 /* OnlineShopApp.xcdatamodeld */,
 			);
 			path = OnlineShopApp;
+			sourceTree = "<group>";
+		};
+		384AB31129C109D5003A9344 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				384AB31229C109E9003A9344 /* Protocols */,
+				384AB31529C10BA4003A9344 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		384AB31229C109E9003A9344 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				384AB31329C10B02003A9344 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		384AB31829C10CE9003A9344 /* SignInVC */ = {
+			isa = PBXGroup;
+			children = (
+				384AB31F29C10DE3003A9344 /* Model */,
+				384AB31E29C10DA8003A9344 /* ViewModel */,
+				384AB31D29C10D95003A9344 /* Views */,
+			);
+			path = SignInVC;
+			sourceTree = "<group>";
+		};
+		384AB31D29C10D95003A9344 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				384AB31B29C10D64003A9344 /* SignInVC.swift */,
+				384AB32429C10ED3003A9344 /* SignInVC.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		384AB31E29C10DA8003A9344 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				384AB32629C11CA6003A9344 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		384AB31F29C10DE3003A9344 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384AB32529C10ED3003A9344 /* SignInVC.storyboard in Resources */,
 				384AB30A29C105B4003A9344 /* LaunchScreen.storyboard in Resources */,
 				384AB30729C105B4003A9344 /* Assets.xcassets in Resources */,
-				384AB30229C105B3003A9344 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +195,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384AB2FF29C105B3003A9344 /* ViewController.swift in Sources */,
+				384AB31429C10B02003A9344 /* Coordinator.swift in Sources */,
+				384AB31629C10BA4003A9344 /* AppCoordinator.swift in Sources */,
+				384AB32729C11CA6003A9344 /* SignInViewModel.swift in Sources */,
 				384AB2FB29C105B3003A9344 /* AppDelegate.swift in Sources */,
+				384AB31C29C10D64003A9344 /* SignInVC.swift in Sources */,
 				384AB30529C105B3003A9344 /* OnlineShopApp.xcdatamodeld in Sources */,
-				384AB2FD29C105B3003A9344 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		384AB30029C105B3003A9344 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				384AB30129C105B3003A9344 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		384AB30829C105B4003A9344 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +344,6 @@
 				INFOPLIST_FILE = OnlineShopApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +371,6 @@
 				INFOPLIST_FILE = OnlineShopApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
